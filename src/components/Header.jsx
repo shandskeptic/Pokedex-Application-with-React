@@ -1,7 +1,7 @@
 export const Header = () => {
 	return (
 		<>
-			<div className=" bg-primary-400 w-full p-4 items-center justify-center flex text-xl font-bold text-secondary-400">
+			<div className="flex justify-center items-center bg-primary-400 p-4 w-full font-bold text-secondary-400 text-xl ">
 				<a href="/">Pokédex</a>
 			</div>
 		</>
