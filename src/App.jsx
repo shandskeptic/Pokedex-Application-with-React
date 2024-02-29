@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Header } from './components/Header';
 import { Card } from './components/Card';
 import { Pagination } from './components/Pagination';
-import { Search } from './components/Search';
+// import { Search } from './components/Search';
 
 function App() {
 	const pokeBaseUrl = `${import.meta.env.VITE_API_BASE_URL}`;
@@ -20,13 +20,13 @@ function App() {
 		setNextUrl(data.next);
 		setPrevUrl(data.previous);
 
-		const getAllPokemons = await Promise.all(
+		const getAllPokemon = await Promise.all(
 			data.results.map(async (pokemon) => {
 				const data = await fetch(`${pokeBaseUrl}/${pokemon.name}`).then((res) => res.json());
 				return data;
 			})
 		);
-		setAllPokemon((currentList) => [...currentList, ...getAllPokemons]);
+		setAllPokemon((currentList) => [...currentList, ...getAllPokemon]);
 
 		setLoading(false);
 	};
@@ -55,7 +55,7 @@ function App() {
 	return (
 		<>
 			<Header />
-			<Search />
+			{/* <Search /> */}
 			<Card api={allPokemon} isLoading={loading} />
 			<Pagination prevPage={goToPrevPage} nextPage={goToNextPage} numberPage={numberPage} />
 		</>

@@ -21,5 +21,5 @@ export const Pagination = ({ prevPage, nextPage, numberPage }) => {
 Pagination.propTypes = {
 	prevPage: PropTypes.func.isRequired,
 	nextPage: PropTypes.func.isRequired,
-	numberPage: PropTypes.string.isRequired,
+	numberPage: PropTypes.number.isRequired,
 };
