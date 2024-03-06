@@ -1,4 +1,4 @@
-![Responsive](https://github.com/shandskeptic/Pokedex-Application-with-React/assets/77574907/c7feb851-f58d-4917-afb5-1a041772e90b)
+![pokereact](https://github.com/shandskeptic/Pokedex-Application-with-React/assets/77574907/e696e807-aaa0-4143-8be0-81a9a7d68046)
 
 # React + Vite
 
